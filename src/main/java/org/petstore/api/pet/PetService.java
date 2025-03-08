@@ -3,6 +3,7 @@ package org.petstore.api.pet;
 import io.restassured.response.Response;
 import org.petstore.models.pet.Pet;
 
+import java.io.File;
 import java.util.List;
 
 import static io.restassured.RestAssured.given;
@@ -45,7 +46,7 @@ public class PetService {
         return given()
                 .pathParam("petId", petId)
                 .multiPart("additionalMetadata", metadata)
-                .multiPart("file", new java.io.File(filePath))
+                .multiPart("file", new File(filePath))
                 .post(BASE_PATH + "/{petId}/uploadImage");
     }
 }
