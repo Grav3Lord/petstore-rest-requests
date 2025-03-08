@@ -5,26 +5,25 @@ import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import com.fasterxml.jackson.datatype.jsr310.deser.InstantDeserializer;
 import com.fasterxml.jackson.datatype.jsr310.ser.OffsetDateTimeSerializer;
+import org.petstore.models.order.status.OrderStatus;
 
 import java.time.OffsetDateTime;
 
 public class Order {
     @JsonProperty("id")
-    private long id;
+    private int id;
 
     @JsonProperty("petId")
-    private long petId;
+    private int petId;
 
     @JsonProperty("quantity")
     private int quantity;
 
-    @JsonSerialize(using = OffsetDateTimeSerializer.class)
-    @JsonDeserialize(using = InstantDeserializer.class)
     @JsonProperty("shipDate")
-    private OffsetDateTime shipDate;
+    private String shipDate;
 
     @JsonProperty("status")
-    private String status; // Enum: "placed", "approved", "delivered"
+    private OrderStatus status;
 
     @JsonProperty("complete")
     private boolean complete;
@@ -35,15 +34,15 @@ public class Order {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public long getPetId() {
+    public int getPetId() {
         return petId;
     }
 
-    public void setPetId(long petId) {
+    public void setPetId(int petId) {
         this.petId = petId;
     }
 
@@ -55,19 +54,19 @@ public class Order {
         this.quantity = quantity;
     }
 
-    public OffsetDateTime getShipDate() {
+    public String getShipDate() {
         return shipDate;
     }
 
-    public void setShipDate(OffsetDateTime shipDate) {
+    public void setShipDate(String shipDate) {
         this.shipDate = shipDate;
     }
 
-    public String getStatus() {
+    public OrderStatus getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(OrderStatus status) {
         this.status = status;
     }
 

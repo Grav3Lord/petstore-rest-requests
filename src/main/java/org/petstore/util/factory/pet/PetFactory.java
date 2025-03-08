@@ -14,10 +14,10 @@ public class PetFactory {
     public static Pet generatePet() {
         Category category = new Category(faker.number().randomNumber(), faker.animal().name());
         List<String> photoUrls = Collections.singletonList(faker.internet().url());
-        List<Tag> tags = Collections.singletonList(new Tag(faker.number().randomNumber(), faker.color().name()));
+        List<Tag> tags = Collections.singletonList(new Tag(faker.number().numberBetween(1, 3), faker.color().name()));
 
         Pet pet = new Pet();
-        pet.setId(faker.number().positive());
+        pet.setId(faker.number().numberBetween(1, 10));
         pet.setCategory(category);
         pet.setName(faker.name().firstName());
         pet.setPhotoUrls(photoUrls);

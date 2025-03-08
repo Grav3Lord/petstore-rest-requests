@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Pet {
     @JsonProperty("id")
-    private long id;
+    private int id;
 
     @JsonProperty("category")
     private Category category;
@@ -27,11 +27,11 @@ public class Pet {
 
     public Pet() {}
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
