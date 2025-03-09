@@ -2,7 +2,7 @@ package store;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.petstore.api.store.StoreService;
+import org.petstore.service.store.StoreService;
 import org.petstore.config.rest.Config;
 import org.petstore.models.order.Order;
 import org.petstore.models.order.status.OrderStatus;

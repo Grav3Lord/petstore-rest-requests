@@ -1,4 +1,4 @@
-package org.petstore.api.store;
+package org.petstore.service.store;
 
 import io.restassured.response.Response;
 import org.petstore.models.order.Order;

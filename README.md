@@ -20,7 +20,7 @@ petstore-rest-requests/
 │   ├── main/
 │   │   └── java/
 │   │       └── org.petstore/
-│   │           ├── api/
+│   │           ├── service/
 │   │           │   ├── PetService.java     # Pet API endpoints
 │   │           │   ├── StoreService.java   # Store API endpoints
 │   │           │   └── UserService.java    # User API endpoints

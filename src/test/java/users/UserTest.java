@@ -2,12 +2,9 @@ package users;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.petstore.api.store.StoreService;
-import org.petstore.api.user.UserService;
+import org.petstore.service.user.UserService;
 import org.petstore.config.rest.Config;
-import org.petstore.models.pet.Pet;
 import org.petstore.models.user.User;
-import org.petstore.util.factory.pet.PetFactory;
 import org.petstore.util.factory.user.UserFactory;
 
 import static org.hamcrest.MatcherAssert.assertThat;

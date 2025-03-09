@@ -2,7 +2,7 @@ package pets;
 
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.petstore.api.pet.PetService;
+import org.petstore.service.pet.PetService;
 import org.petstore.config.rest.Config;
 import org.petstore.models.pet.Pet;
 import org.petstore.util.factory.pet.PetFactory;

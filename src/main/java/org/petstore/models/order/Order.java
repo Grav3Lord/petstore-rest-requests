@@ -1,13 +1,7 @@
 package org.petstore.models.order;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.datatype.jsr310.deser.InstantDeserializer;
-import com.fasterxml.jackson.datatype.jsr310.ser.OffsetDateTimeSerializer;
 import org.petstore.models.order.status.OrderStatus;
-
-import java.time.OffsetDateTime;
 
 public class Order {
     @JsonProperty("id")
