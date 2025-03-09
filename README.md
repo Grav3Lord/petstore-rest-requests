@@ -58,8 +58,8 @@ petstore-rest-requests/
 
 
 ### Key Components
-- **`api`**: Implements API Object Model for endpoint interactions (`PetService`, `StoreService`, `UserService`).
-- **`config`**: Sets up RestAssured with base URI, content type, and logging.
+- **`service`**: Implements API Object Model for endpoint interactions (`PetService`, `StoreService`, `UserService`).
+- **`config.rest`**: Sets up RestAssured with base URI, content type, and logging.
 - **`models`**: Defines data structures with enums (e.g., `OrderStatus`).
 - **`util.factory`**: Provides factories for generating test data (`PetFactory`, `OrderFactory`, `UserFactory`).
 - **`test`**: Contains JUnit 5 test cases (`PetsTest`, `StoreTest`, `UserTest`).
